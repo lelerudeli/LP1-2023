@@ -18,9 +18,7 @@ public class main {
         loja.addPedidos(pedidos);
         loja.addPedidos(pedidos2);
         loja.addPedidos(pedidos3);
-        
-        loja.listarcliente();
-        loja.listarpedidos();
+ 
 
 
        // mostrarClientes();
