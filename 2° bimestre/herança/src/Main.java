@@ -20,7 +20,7 @@ public class Main {
 
         System.out.printf("-Reajuste de valor parque-");
         System.out.println("\nValor inicial: " + parque.getValor());
-        cinema.mudarValor(50.00);
+        parque.mudarValor(50.00);
         System.out.println("Valor reajustado: " + parque.getValor());
 
 
