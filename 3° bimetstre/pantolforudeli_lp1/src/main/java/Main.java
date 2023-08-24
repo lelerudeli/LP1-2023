@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import util.HibernateUtil;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class Main {
         Produtos produto = new Produtos("blusa", 59.90);
         Produtos produto2 = new Produtos("calça", 89.90);
 
-        Pedido pedido = new Pedido(p1, Arrays.asList(produto, produto2));
+        Pedido pedido = new Pedido(p1, new ArrayList<>(List.of(produto, produto2)));
 
         Session session = HibernateUtil.getSessionFactory().openSession(); // criando sessão, pegando sessão, abrindo sessão
 
